@@ -40,43 +40,88 @@
   }
 }
 
-.main{
+.main {
   position: relative;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:80%;
-  height:auto;
-  border:1px solid red;
-
+  width: 80%;
+  height: auto;
+  border: 1px solid red;
+  background-color: #f3d74e;
+  color: white;
 }
 
-.oneperson{
-
-   width:90%;
-   height:30px;
-   border: 1px solid black ;
-   padding:30px;
-   margin:4px;
-   border-radius: 20px;
-   
+.oneperson {
+  width: 90%;
+  height: 30px;
+  border: 1px solid black;
+  padding: 30px;
+  margin: 4px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
 }
 
-.oneperson:hover{
-   border:2px solid blue;
-   margin:1px
+.oneperson:hover {
+  border: 2px solid blue;
+  margin: 1px;
 }
 
-.content{
-  display:flex;
+.content {
+  display: flex;
   justify-content: space-between;
 }
 
-button{
+button {
   margin: 3px;
   background: transparent;
-  border:1px solid red;
-  cursor:pointer;
+  border: 1px solid red;
+  cursor: pointer;
+}
 
+.modal {
+  display: block;
+  width: 50%;
+  height: 70%;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 2;
+  border: 1px SOLID RED;
+}
+.innermodal {
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+}
+
+.modal button,
+button {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay1 {
+  position: fixed; /*Sit on top of the page content*/
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  background-color: rgba(0, 0, 0, 0.9); /*Black background with opacity*/
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+}
+
+.inputData {
+  display: flex;
+  /* position: absolute; */
 }
